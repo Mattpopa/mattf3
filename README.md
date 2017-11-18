@@ -29,7 +29,7 @@
 #    3. deploy a single server;
         *if git@github.com:Mattpopa/mattf3.git was cloned in ~, then:
        pushd ~/mattf3
-       git reset --hard 
+       git reset --hard COMMITHASH 
        terraform plan
         [...]
        popd 

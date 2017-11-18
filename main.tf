@@ -6,14 +6,9 @@ provider "aws" {
 resource "aws_instance" "mastodon" {
     ami = "ami-1e339e71"
     instance_type = "t2.micro"
+    key_name="mastodon"
+ tags {
+        Name = "emperor_of_sand"
+        }
 } 
 
-
-# the general tf syntax to add a resource is
-# 
-# resource "PROVIDER_TYPE" "NAME" {
-#  [CONFIG ...]
-# }
-#
-# where PROVIDER_TYPE is aws api related naming
-# and NAME it can be of your chosing
