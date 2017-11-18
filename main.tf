@@ -45,3 +45,11 @@ resource "aws_security_group" "allow_team" {
 }
 
 
+output "server_ip" {
+    value = "${aws_instance.mastodon.public_ip}"
+}
+
+output "dns_name" {
+    value = "${aws_instance.mastodon.public_dns}"
+}
+
