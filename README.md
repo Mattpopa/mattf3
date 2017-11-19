@@ -64,3 +64,15 @@
         a few words, no slides 
 
 #    10. tip of the hat to (TBD)
+
+
+#ps: I use some aliases
+alias tf='terraform'
+alias tf_add='terraform apply -var '\''extra_var=false'\'' -var '\''extra_var2=true'\'''
+alias tf_app='terraform apply -var '\''extra_var=false'\'' -var '\''extra_var2=true'\'''
+alias tf_dest='(echo yes) | terraform destroy'
+alias tf_env='terraform workspace list'
+alias tf_get='terraform get'
+alias tf_plan='terraform plan -var '\''extra_var=false'\'' -var '\''extra_var2=true'\'''
+alias tf_ref='terraform refresh'
+alias tf_sel='terraform workspace select'

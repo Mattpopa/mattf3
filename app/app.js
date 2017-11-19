@@ -1,7 +1,6 @@
-var app = express();
-var server = http.createServer(app);
+const express = require('express')
+const app = express()
 
-app.use(express.static(__dirname + '/uploads'));
-
-console.log("listen to 9000");
-server.listen(9000);
+app.use(express.static('public'));
+app.get('/', (req, res) => res.redirect("/3.gif"));
+app.listen(9090, () => console.log('app listening on port 9090'))
