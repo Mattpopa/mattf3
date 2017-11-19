@@ -64,3 +64,4 @@ output "server_ip" {
 output "dns_name" {
     value = "${aws_instance.mastodon.public_dns}"
 }
+
